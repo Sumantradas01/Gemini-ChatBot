@@ -1,1 +1,2 @@
-# Gemini-ChatBot
+# financeAI
+gdg solution challenge

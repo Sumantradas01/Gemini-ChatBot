@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About FinanceAI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a2b4d 0%, #162238 50%, #0c1526 100%);
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    .splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1a2b4d 0%, #162238 50%, #0c1526 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      animation: fadeOut 1s ease-in-out 2s forwards;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .about-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 100%;
+      opacity: 1; /* Changed from 0 to 1 to ensure visibility */
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-section {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 2rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 4rem 0;
+    }
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #60a5fa;
+    }
+
+    .feature-description {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+    }
+
+    .cta-section {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(45deg, #60a5fa, #3b82f6);
+      border-radius: 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Added to ensure content scrolls properly */
+    .content-wrapper {
+      flex: 1;
+      overflow-y: auto;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="splash">
+    <div class="logo">FinanceAI</div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="about-container">
+      <div class="nav-bar">
+        <div class="logo">FinanceAI</div>
+      </div>
+
+      <div class="hero-section">
+        <h1 class="hero-title">Your AI-Powered Finance Assistant</h1>
+        <p class="hero-subtitle">Stay ahead of the markets with real-time insights and personalized financial guidance</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <h2 class="feature-title">Market Intelligence</h2>
+          <p class="feature-description">Get real-time updates on global markets, comprehensive analysis of trends, and actionable insights. Our AI processes thousands of data points to keep you informed of market movements.</p>
+        </div>
+
+        <div class="feature-card">
+          <h2 class="feature-title">Crypto Insights</h2>
+          <p class="feature-description">Stay updated with the latest cryptocurrency trends, price movements, and market sentiment. Get detailed analysis of blockchain technologies and emerging digital assets.</p>
+        </div>
+
+        <div class="feature-card">
+          <h2 class="feature-title">Financial News</h2>
+          <p class="feature-description">Access curated financial news from trusted sources worldwide. Our AI filters and summarizes the most relevant information for your investment interests.</p>
+        </div>
+
+        <div class="feature-card">
+          <h2 class="feature-title">Portfolio Analysis</h2>
+          <p class="feature-description">Receive personalized portfolio insights, risk assessments, and investment recommendations based on your financial goals and market conditions.</p>
+        </div>
+
+        <div class="feature-card">
+          <h2 class="feature-title">Trading Signals</h2>
+          <p class="feature-description">Get AI-powered trading signals and technical analysis for stocks, cryptocurrencies, and other assets. Make informed decisions with our advanced predictive models.</p>
+        </div>
+
+        <div class="feature-card">
+          <h2 class="feature-title">Educational Resources</h2>
+          <p class="feature-description">Access a wealth of educational content to enhance your financial literacy. Learn about investment strategies, market analysis, and risk management.</p>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <h2 class="hero-subtitle">Ready to transform your financial decision-making?</h2>
+        <a href="main.html" class="cta-button">Start Chat Now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
